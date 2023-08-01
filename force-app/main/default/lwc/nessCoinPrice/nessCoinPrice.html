@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title = "Ness Coin Price" icon-name="custom:custom63">
+        <div class= "slds-var-m-around_medium">
+                <lightning-badge label ="NessCoinPrice"></lightning-badge>
+                <lightning-badge label={latestNesscoinPrice}></lightning-badge>
+        </div>
+    </Lightning-card>
+    <!-- call child object in parent to pass the parent value -->
+    <c-portfolio-balance nesscoin-price={nesscoinPrice} record-id={recordId}></c-portfolio-balance>
+    <c-buy-sell-ness-coins nesscoin-price={nesscoinPrice} record-id={recordId}></c-buy-sell-ness-coins>
+</template>

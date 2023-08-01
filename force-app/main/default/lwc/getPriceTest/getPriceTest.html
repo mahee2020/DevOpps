@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="Coin Price">
+        <div class="slds-var-m-around_medium">
+        <p class="slds-var-m-around_small">
+       <lightning-button label="Price" onclick={handleChange}></lightning-button>
+       <!--<lightning-badge label={connectedCallback}></lightning-badge>-->
+        </p>
+        <template if:true={RandomPrice}>{RandomPrice}</template>
+        <template if:true={error}>{error}</template>
+        </div>
+    </lightning-card>
+</template>

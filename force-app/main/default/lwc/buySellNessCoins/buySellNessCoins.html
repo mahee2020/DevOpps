@@ -1,0 +1,10 @@
+<template>
+    <Lightning-card title = "Buy/Sell Ness Coins" icon-name="custom:custom63">
+    <lightning-badge label = "Number of Ness Coins"></lightning-badge>
+    <div class="slds-var-m-around_medium">
+        <lightning-input type="text" label="Enter the number of Coins" placeholder="type here..." onchange={handleCoinsInput}></lightning-input>
+        <lightning-button onclick={handleBuyCoins}>Buy</lightning-button>
+        <lightning-button  onclick={handleSellCoins}>Sell</lightning-button>
+    </div>
+</Lightning-card>
+</template>
